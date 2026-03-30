@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Expert baby ultrasound scans in a warm, playful environment at Rainbow Baby Scans. CQC Regulated with 99.9% gender accuracy.">
+    <title>Rainbow Baby Scans | Meet Your Little Miracle</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'rb-offwhite': '#F8F9FA',
+                        'rb-charcoal': '#2D3436',
+                        'rb-purple': '#7166ce',
+                        'rb-pink': '#f396c0',
+                        'rb-mint': '#b1cfc7',
+                        'rb-blue': '#54d7e5',
+                        'rb-yellow': '#efd9aa',
+                    },
+                    fontFamily: {
+                        'display': ['Fredoka', 'sans-serif'],
+                        'body': ['Quicksand', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'pill': '50px',
+                        'squircle': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            color: #2D3436;
+            background-color: #F8F9FA;
+            scroll-behavior: smooth;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Fredoka', sans-serif;
+        }
+        
+        .cloud-divider {
+            background-color: #fff;
+            clip-path: ellipse(100% 100% at 50% 100%);
+            height: 80px;
+            width: 100%;
+        }
+        
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .reveal-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .bubble-mask {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: morph 8s ease-in-out infinite;
+        }
+        
+        @keyframes morph {
+            0% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+            50% {
+                border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+            }
+            100% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+        }
+        
+        .neo-shadow {
+            box-shadow: 10px 10px 0px rgba(113, 102, 206, 0.1);
+        }
+        
+        .rainbow-gradient-border {
+            padding: 4px;
+            background: linear-gradient(to right, #f396c0, #7166ce, #54d7e5, #b1cfc7);
+            border-radius: 2.2rem;
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="hidden lg:flex space-x-8 text-sm font-bold uppercase tracking-wider">
+                <a href="#" class="hover:text-rb-purple transition">Home</a>
+                <a href="#packages" class="hover:text-rb-purple transition">Packages</a>
+                <a href="#shop" class="hover:text-rb-purple transition">Boutique <span class="bg-rb-pink text-white text-[10px] px-2 py-0.5 rounded-full ml-1">New</span></a>
+            </div>
+
+            <a href="/" class="flex-shrink-0">
+                <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Rainbow-baby-scans-header-logo.png" class="h-14 lg:h-20" alt="Rainbow Baby Scans">
+            </a>
+
+            <div class="flex items-center space-x-6">
+                <div class="hidden lg:flex space-x-8 text-sm font-bold uppercase tracking-wider">
+                    <a href="#team" class="hover:text-rb-purple transition">The Team</a>
+                    <a href="#contact" class="hover:text-rb-purple transition">Contact</a>
+                </div>
+                <a href="#booking" class="bg-rb-purple text-white px-8 py-3 rounded-pill font-bold shadow-lg shadow-rb-purple/20 hover:scale-105 transition active:scale-95">Book Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section 1: The Miracle Hero -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-40 bg-white overflow-hidden">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="reveal-up">
+                <h1 class="text-5xl lg:text-7xl font-bold mb-6 leading-tight">
+                    Meet Your Little <span class="text-rb-purple">Miracle.</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-10 max-w-lg leading-relaxed">
+                    Experience the magic of your pregnancy with expert ultrasound scans in a warm, playful boutique environment.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#packages" class="bg-rb-pink text-white px-10 py-4 rounded-pill font-bold text-lg shadow-xl shadow-rb-pink/20 hover:-translate-y-1 transition">View Packages</a>
+                    <a href="#shop" class="bg-rb-offwhite border-2 border-gray-100 text-rb-charcoal px-10 py-4 rounded-pill font-bold text-lg hover:bg-gray-50 transition">Visit Boutique</a>
+                </div>
+                <div class="mt-12 flex items-center gap-6">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="text-rb-mint"></i>
+                        <span class="text-sm font-semibold uppercase tracking-wide">CQC Regulated</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="award" class="text-rb-blue"></i>
+                        <span class="text-sm font-semibold uppercase tracking-wide">99.9% Gender Accuracy</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative reveal-up delay-200">
+                <div class="bubble-mask overflow-hidden shadow-2xl">
+                    <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Second-Trimester.jpg" alt="4D Scan Preview" class="w-full h-full object-cover aspect-square scale-110">
+                </div>
+                <!-- Decorative Floaters -->
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-rb-yellow/30 rounded-full blur-2xl animate-pulse"></div>
+                <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-rb-blue/20 rounded-full blur-3xl animate-pulse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Meet the Team -->
+    <section id="team" class="py-20 bg-rb-offwhite">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-4xl font-bold mb-4">Meet Our Caring Team</h2>
+                <p class="text-gray-500">Expertise from the NHS, delivered with a homely touch.</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-squircle text-center reveal-up">
+                    <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Andrew-Graham-meet-the-team.png" class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-rb-yellow mb-6" alt="Team Member">
+                    <h4 class="font-bold text-xl">Andrew Graham</h4>
+                    <p class="text-sm text-rb-purple font-semibold mb-4 uppercase">Operations Manager</p>
+                    <p class="text-gray-500 text-sm italic">Qualified Hypnotherapist & Calming Presence.</p>
+                </div>
+                <div class="bg-white p-8 rounded-squircle text-center reveal-up delay-100">
+                    <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Lailani-Mamaril.png" class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-rb-mint mb-6" alt="Team Member">
+                    <h4 class="font-bold text-xl">Lailani Mamaril</h4>
+                    <p class="text-sm text-rb-purple font-semibold mb-4 uppercase">Senior Sonographer</p>
+                    <p class="text-gray-500 text-sm italic">Expert NHS background & high-quality care.</p>
+                </div>
+                <div class="bg-white p-8 rounded-squircle text-center reveal-up delay-200">
+                    <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Seeta-Selvaraj.png" class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-rb-blue mb-6" alt="Team Member">
+                    <h4 class="font-bold text-xl">Seeta Selvaraj</h4>
+                    <p class="text-sm text-rb-purple font-semibold mb-4 uppercase">Lead Sonographer</p>
+                    <p class="text-gray-500 text-sm italic">Dedicated to making every scan magical.</p>
+                </div>
+                <div class="bg-white p-8 rounded-squircle text-center reveal-up delay-300">
+                    <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Tanya-Honeysett.png" class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-rb-pink mb-6" alt="Team Member">
+                    <h4 class="font-bold text-xl">Tanya Honeysett</h4>
+                    <p class="text-sm text-rb-purple font-semibold mb-4 uppercase">Chaperone</p>
+                    <p class="text-gray-500 text-sm italic">The warm welcome behind our clinic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Scan Packages -->
+    <section id="packages" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal-up">
+                <div>
+                    <h2 class="text-5xl font-bold mb-4">Scan Packages</h2>
+                    <p class="text-gray-500 max-w-md">Every stage of your journey deserves to be celebrated with crystal clarity.</p>
+                </div>
+                <a href="#" class="mt-6 md:mt-0 text-rb-purple font-bold flex items-center gap-2 hover:translate-x-2 transition">View Detailed Pricing <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-10">
+                <!-- Package 1 -->
+                <div class="bg-white rounded-squircle p-8 border-2 border-rb-mint/30 neo-shadow reveal-up">
+                    <span class="bg-rb-mint/20 text-rb-mint px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">6 - 13 Weeks</span>
+                    <h3 class="text-3xl font-bold mb-4">Early Years</h3>
+                    <p class="text-gray-600 mb-8">Confirm fetal location, heartbeat, and receive stunning initial video clips.</p>
+                    <div class="text-4xl font-bold mb-10 text-rb-charcoal">£59.00</div>
+                    <button class="w-full bg-rb-charcoal text-white py-4 rounded-pill font-bold hover:bg-rb-purple transition flex items-center justify-center gap-2">
+                        <i data-lucide="shopping-cart" size="18"></i> Book & Prepay
+                    </button>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="bg-white rounded-squircle p-8 border-2 border-rb-pink/30 neo-shadow reveal-up delay-100">
+                    <span class="bg-rb-pink/20 text-rb-pink px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">16+ Weeks</span>
+                    <h3 class="text-3xl font-bold mb-4">Gender Reveal</h3>
+                    <p class="text-gray-600 mb-8">Professional confirmation with fun reveal options and 3D imaging glimpses.</p>
+                    <div class="text-4xl font-bold mb-10 text-rb-charcoal">£65.00</div>
+                    <button class="w-full bg-rb-pink text-white py-4 rounded-pill font-bold hover:shadow-lg transition flex items-center justify-center gap-2">
+                        <i data-lucide="shopping-cart" size="18"></i> Book & Prepay
+                    </button>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="rainbow-gradient-border neo-shadow reveal-up delay-200">
+                    <div class="bg-white rounded-squircle p-8 h-full">
+                        <span class="bg-rb-purple/10 text-rb-purple px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">27+ Weeks</span>
+                        <h3 class="text-3xl font-bold mb-4 text-rb-purple">8K VIP Experience</h3>
+                        <p class="text-gray-600 mb-8">The ultimate bonding moment. Hyper-realistic imaging, growth report & video.</p>
+                        <div class="text-4xl font-bold mb-10 text-rb-charcoal">£129.00</div>
+                        <button class="w-full bg-rb-purple text-white py-4 rounded-pill font-bold hover:scale-[1.02] transition flex items-center justify-center gap-2">
+                            <i data-lucide="sparkles" size="18"></i> Book the Magic
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Rainbow Boutique -->
+    <section id="shop" class="py-24 bg-rb-offwhite overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-4xl font-bold mb-4">Rainbow Boutique</h2>
+                <p class="text-gray-500">Hand-picked treasures for your new arrival.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="group reveal-up">
+                    <div class="aspect-square bg-white rounded-squircle mb-4 flex items-center justify-center relative overflow-hidden p-8 shadow-sm">
+                        <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Rainbow-Illustration.png" class="w-48 group-hover:scale-110 transition duration-500" alt="Soft Toy">
+                        <div class="absolute inset-0 bg-rb-purple/5 opacity-0 group-hover:opacity-100 transition"></div>
+                    </div>
+                    <h4 class="font-bold text-center">Gender Reveal Heartbeat Bear</h4>
+                    <p class="text-rb-purple text-center font-bold">£24.99</p>
+                </div>
+                <!-- Product 2 -->
+                <div class="group reveal-up delay-100">
+                    <div class="aspect-square bg-white rounded-squircle mb-4 flex items-center justify-center relative overflow-hidden p-8 shadow-sm">
+                        <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Sun-Illustration.png" class="w-48 group-hover:scale-110 transition duration-500" alt="Keepsake">
+                    </div>
+                    <h4 class="font-bold text-center">Wooden Milestone Cards</h4>
+                    <p class="text-rb-purple text-center font-bold">£18.00</p>
+                </div>
+                <!-- Product 3 -->
+                <div class="group reveal-up delay-200">
+                    <div class="aspect-square bg-white rounded-squircle mb-4 flex items-center justify-center relative overflow-hidden p-8 shadow-sm">
+                        <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Cloud-Illustration.png" class="w-48 group-hover:scale-110 transition duration-500" alt="Toy">
+                    </div>
+                    <h4 class="font-bold text-center">Rainbow Plush Rattle</h4>
+                    <p class="text-rb-purple text-center font-bold">£12.50</p>
+                </div>
+                <!-- Product 4 -->
+                <div class="group reveal-up delay-300">
+                    <div class="aspect-square bg-white rounded-squircle mb-4 flex items-center justify-center relative overflow-hidden p-8 shadow-sm">
+                        <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Testimonial-star.png" class="w-48 group-hover:scale-110 transition duration-500" alt="Frame">
+                    </div>
+                    <h4 class="font-bold text-center">Scan Keepsake Frame</h4>
+                    <p class="text-rb-purple text-center font-bold">£22.00</p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center reveal-up">
+                <a href="#" class="inline-block bg-rb-charcoal text-white px-12 py-4 rounded-pill font-bold hover:bg-rb-purple transition">Explore All Gifts & Keepsakes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: The Journey -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+            <div class="reveal-up">
+                <div class="relative">
+                    <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Early-Pregnancy-Scan.jpg" class="rounded-squircle shadow-2xl" alt="Our Clinic">
+                    <div class="absolute -bottom-10 -right-10 bg-rb-mint p-8 rounded-squircle text-white max-w-xs shadow-xl">
+                        <p class="text-lg font-bold">"Leaving behind the clinical hospital vibes for a magical clinic experience."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal-up delay-200">
+                <h2 class="text-4xl font-bold mb-8">Your Rainbow Journey</h2>
+                <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                    We believe every pregnancy journey is unique. We’ve created a warm and inviting environment where you can feel at ease. No bright clinical lights—just comfort, clarity, and the joy of connection.
+                </p>
+                <p class="text-gray-600 mb-10 text-lg leading-relaxed">
+                    Our studio uses state-of-the-art ultrasound tech to bring you clear, emotional images you’ll treasure forever.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-rb-yellow p-3 rounded-xl"><i data-lucide="home" class="text-rb-charcoal"></i></div>
+                        <div>
+                            <h5 class="font-bold">Homely Feel</h5>
+                            <p class="text-sm text-gray-500">Relax in our cozy lounge</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="bg-rb-blue p-3 rounded-xl"><i data-lucide="cpu" class="text-rb-charcoal"></i></div>
+                        <div>
+                            <h5 class="font-bold">Latest Tech</h5>
+                            <p class="text-sm text-gray-500">HD Live & 8K Rendering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Testimonials -->
+    <section class="py-24 bg-rb-offwhite relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 reveal-up">
+                <h2 class="text-4xl font-bold mb-4">Loved by Mums</h2>
+                <div class="flex justify-center gap-1 text-rb-yellow mb-2">
+                    <i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i><i data-lucide="star" fill="currentColor"></i>
+                </div>
+                <p class="text-gray-500">Rated 5/5 on Google & Facebook</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 reveal-up">
+                <div class="bg-white p-8 rounded-squircle shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-rb-mint rounded-full flex items-center justify-center text-white font-bold">S</div>
+                        <div>
+                            <h5 class="font-bold">Samantha R.</h5><span class="text-xs font-bold text-rb-mint uppercase">Verified Mum</span></div>
+                    </div>
+                    <p class="text-gray-600 italic">"Came for a 4D scan, the ladies were so nice. We were able to come as a family with our children. Seeta gave us lots of time to get great images. Magical!"</p>
+                </div>
+                <div class="bg-white p-8 rounded-squircle shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-rb-pink rounded-full flex items-center justify-center text-white font-bold">M</div>
+                        <div>
+                            <h5 class="font-bold">Michelle H.</h5><span class="text-xs font-bold text-rb-mint uppercase">Verified Mum</span></div>
+                    </div>
+                    <p class="text-gray-600 italic">"The gender reveal was so special. They made sure we didn't see anything until the moment was right. Highly recommend for the atmosphere alone!"</p>
+                </div>
+                <div class="bg-white p-8 rounded-squircle shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-rb-purple rounded-full flex items-center justify-center text-white font-bold">L</div>
+                        <div>
+                            <h5 class="font-bold">Laura W.</h5><span class="text-xs font-bold text-rb-mint uppercase">Verified Mum</span></div>
+                    </div>
+                    <p class="text-gray-600 italic">"Very professional but felt like I was in a friend's living room. The quality of the 8K images is mind-blowing. Thank you Rainbow Baby team!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Booking Form -->
+    <section id="booking" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-rb-offwhite rounded-squircle p-10 lg:p-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-10 opacity-10">
+                    <i data-lucide="calendar" size="120" class="text-rb-purple"></i>
+                </div>
+
+                <div class="reveal-up">
+                    <h2 class="text-4xl font-bold mb-8 text-center">Ready to book?</h2>
+                    <form class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest mb-2 ml-1">Full Name</label>
+                            <input type="text" placeholder="Your name" class="w-full px-6 py-4 rounded-pill border-2 border-gray-100 focus:border-rb-purple outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest mb-2 ml-1">Due Date</label>
+                            <input type="date" class="w-full px-6 py-4 rounded-pill border-2 border-gray-100 focus:border-rb-purple outline-none transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest mb-2 ml-1">Scan Type</label>
+                            <select class="w-full px-6 py-4 rounded-pill border-2 border-gray-100 focus:border-rb-purple outline-none transition appearance-none">
+                                <option>Select a package</option>
+                                <option>Early Years (6-13w)</option>
+                                <option>Gender Reveal (16w+)</option>
+                                <option>4D/8K VIP Experience</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold uppercase tracking-widest mb-2 ml-1">Phone Number</label>
+                            <input type="tel" placeholder="Best number to reach you" class="w-full px-6 py-4 rounded-pill border-2 border-gray-100 focus:border-rb-purple outline-none transition">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-sm font-bold uppercase tracking-widest mb-2 ml-1">Message (Optional)</label>
+                            <textarea placeholder="Any special requests or details..." class="w-full px-8 py-4 rounded-3xl border-2 border-gray-100 focus:border-rb-purple outline-none transition h-32"></textarea>
+                        </div>
+                        <div class="md:col-span-2 text-center">
+                            <button class="bg-rb-purple text-white px-12 py-4 rounded-pill font-bold text-lg hover:scale-105 transition shadow-xl shadow-rb-purple/30">Request Appointment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rb-charcoal text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-20">
+                <div>
+                    <img src="https://rainbowbabyscans.co.uk/wp-content/uploads/2025/02/Rainbow-baby-scans-header-logo.png" class="h-20 brightness-200 grayscale mb-6" alt="Logo">
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Expert sonographers making magic happen. Every pregnancy journey unique and celebrated in our warm clinic.
+                    </p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-rb-purple transition"><i data-lucide="instagram" size="18"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-rb-purple transition"><i data-lucide="facebook" size="18"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-rb-purple transition"><i data-lucide="video" size="18"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-rb-yellow">Packages</h5>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Early Pregnancy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Gender Reveals</a></li>
+                        <li><a href="#" class="hover:text-white transition">3D/4D Experience</a></li>
+                        <li><a href="#" class="hover:text-white transition">8K Reconstructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-rb-yellow">Boutique Shop</h5>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Heartbeat Bears</a></li>
+                        <li><a href="#" class="hover:text-white transition">Keepsake Frames</a></li>
+                        <li><a href="#" class="hover:text-white transition">Rainbow Soft Toys</a></li>
+                        <li><a href="#" class="hover:text-white transition">Gift Vouchers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-6 uppercase tracking-widest text-rb-yellow">Contact Us</h5>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex gap-3"><i data-lucide="map-pin" size="16" class="text-rb-blue"></i> 7 Wickham Ave, Bexhill-on-Sea, TN39 3EP</li>
+                        <li class="flex gap-3"><i data-lucide="phone" size="16" class="text-rb-blue"></i> 01424 322628</li>
+                        <li class="flex gap-3"><i data-lucide="mail" size="16" class="text-rb-blue"></i> info@rainbowbabyscans.co.uk</li>
+                        <li>
+                            <div class="mt-4 bg-white/5 p-4 rounded-xl inline-block border border-white/10">
+                                <span class="text-[10px] font-bold block mb-1">CQC REGISTERED</span>
+                                <span class="text-xs text-white">Location ID: 1-19679365360</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-10 text-center text-xs text-gray-500">
+                <p>© 2024 Rainbow Baby Scans. All rights reserved. 99.9% Gender Accuracy Guarantee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-up').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>
